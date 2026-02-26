@@ -126,11 +126,11 @@ def post_to_notebooklm(filepath, notebook_url):
             print("--------------------------------------------------------------")
             
             # 브라우저가 바로 닫히지 않고 결과를 눈으로 볼 수 있게 대기
-            input("⚠️ 마무리가 모두 끝난 후 이 창에서 [Enter] 키를 누르면 반 팀장의 에이전트가 종료됩니다.\n")
+            time.sleep(5)
             
         except Exception as e:
             print(f"❌ 스크립트 실행 중 치명적인 오류 발생: {e}")
-            input("오류를 확인 후 [Enter]를 눌러 종료하세요.\n")
+            time.sleep(5)
         finally:
             if 'browser' in locals():
                 browser.close()

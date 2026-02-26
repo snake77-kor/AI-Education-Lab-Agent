@@ -12,14 +12,19 @@ def post_to_naver_blog(file_path):
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    # 내용 분석 (첫 줄을 제목으로 파악)
+    # 내용 분석 (첫 줄을 제목으로 파악하거나 파일명 사용)
+    filename = os.path.basename(file_path)
+    file_title = os.path.splitext(filename)[0]
+    
     lines = content.split('\n')
     if lines and lines[0].startswith('#'):
-        title = lines[0].replace('#', '').strip()
+        parsed_title = lines[0].replace('#', '').strip()
         body = '\n'.join(lines[1:]).strip()
     else:
-        title = "AI 교육 연구소 일일 자료"
+        parsed_title = file_title
         body = content
+        
+    title = f"[사직동_탑영어] {parsed_title}"
 
     WORKSPACE_DIR = os.path.dirname(os.path.abspath(__file__))
     # 보안: .env 파일에서 아이디/비밀번호 정보 로드
@@ -223,9 +228,9 @@ def post_to_naver_blog(file_path):
             print(f"❗ 에디터 프레임을 자동 조작할 수 없습니다: {e}")
             page.screenshot(path="debug_exception.png")
 
-        print("⚠️ 마무리가 모두 끝난 후 이 창에서 [Enter] 키를 누르면 반 팀장의 에이전트가 종료됩니다.")
+        print("⚠️ 에디터 입력을 마치고 5초 뒤에 종료됩니다.")
         
-        input() # 사용자가 작업을 끝내고 종료할 때 가지 대기
+        time.sleep(5) # 사용자가 작업을 끝내고 종료할 때 가지 대기
         browser.close()
 
 if __name__ == "__main__":
