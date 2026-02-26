@@ -122,18 +122,21 @@ def post_to_notebooklm(filepath, notebook_url):
                 
             time.sleep(2)
             
-            # 5. 슬라이드 자료 생성 클릭
-            print(f"[5/5] 🎉 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
-            try:
-                # 슬라이드 자료 찾기 (div, span 등 다양하게 매핑)
-                slide_btn = page.evaluate('''(texts) => {
-                    const elements = Array.from(document.querySelectorAll("*"));
-                    const target = elements.find(el => texts.includes(el.textContent.trim()) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
-                    if(target) target.click();
-                }''', ["슬라이드 자료", "Slide material"])
-                print("✅ [슬라이드 자료] 스튜디오 생성을 요청했습니다.")
-            except Exception as e:
-                 print(f"⚠️ 슬라이드 버튼 클릭 중 오류 발생: {e}")
+            # 5. 슬라이드 자료 생성 클릭 (서술형 연구실은 생략)
+            if "서술형" in title:
+                print(f"[5/5] ⏭️ 서술형 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
+            else:
+                print(f"[5/5] 🎉 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
+                try:
+                    # 슬라이드 자료 찾기 (div, span 등 다양하게 매핑)
+                    slide_btn = page.evaluate('''(texts) => {
+                        const elements = Array.from(document.querySelectorAll("*"));
+                        const target = elements.find(el => texts.includes(el.textContent.trim()) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
+                        if(target) target.click();
+                    }''', ["슬라이드 자료", "Slide material"])
+                    print("✅ [슬라이드 자료] 스튜디오 생성을 요청했습니다.")
+                except Exception as e:
+                     print(f"⚠️ 슬라이드 버튼 클릭 중 오류 발생: {e}")
                  
             print("\n--------------------------------------------------------------")
             print("🎉 [작업 완료] NotebookLM 소스 업로드 및 자동화 파이프라인이 종료되었습니다.")
