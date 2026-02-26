@@ -48,16 +48,17 @@ def post_to_notebooklm(filepath, notebook_url):
             # 노트북 로딩 대기
             print(f"[3/5] 📝 소스 추가를 진행합니다...")
             
-            # '소스 추가' 버튼이 보일 때까지 대기
-            page.wait_for_selector('text="소스 추가" | text="출처 추가" | text="Add Source" | text="Add source"', timeout=60000)
-            time.sleep(2) # 안정화
-            
-            # 1. 소스 추가 클릭
-            page.evaluate('''(texts) => {
-                const elements = Array.from(document.querySelectorAll("*"));
-                const target = elements.find(el => texts.includes(el.textContent.trim()));
-                if(target) target.click();
-            }''', ["소스 추가", "출처 추가", "Add Source", "Add source"])
+            # 1. 새 소스 추가 버튼 클릭 (정확한 텍스트 매칭 대신 내부 텍스트 탐색 후 클릭)
+            try:
+                page.wait_for_selector('text=소스 추가', timeout=60000)
+                page.locator('text=소스 추가').first.click()
+            except Exception:
+                # 플랜 B: 화면에서 텍스트가 '소스 추가'인 걸 찾아서 강제 클릭
+                page.evaluate('''() => {
+                    const els = Array.from(document.querySelectorAll('*'));
+                    const target = els.find(el => el.textContent && el.textContent.includes('소스 추가') && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
+                    if(target) target.click();
+                }''')
             
             time.sleep(1)
             
@@ -71,16 +72,30 @@ def post_to_notebooklm(filepath, notebook_url):
             time.sleep(1)
             
             # 3. 텍스트 입력창 찾고 타이핑
-            textarea = page.locator('textarea').first
+            # 모달창이 열린 이후 렌더링된 마지막 textarea일 확률이 높음 (첫 번째는 주로 하단 메인 채팅창)
+            textarea = page.locator('textarea').last
+            textarea.wait_for(state="visible", timeout=10000)
+            textarea.click()
+            
+            # 간혹 fill이 Angular 이벤트를 트리거하지 않아 '삽입' 버튼이 비활성화되는 것을 방지
             textarea.fill(content)
+            textarea.press("Space")
+            page.keyboard.press("Backspace")
             
             time.sleep(1)
             
             # 4. 삽입 클릭
-            # NotebookLM의 다이얼로그 안의 삽입 버튼
+            # NotebookLM의 다이얼로그 안의 삽입 버튼 (비활성화 상태가 풀리기까지 대기)
             insert_btns = page.locator('button:has-text("삽입"), button:has-text("Insert")')
-            if insert_btns.count() > 0:
-                insert_btns.last.click() # 보통 팝업 창의 삽입 버튼이 마지막에 렌더링됨
+            try:
+                insert_btns.last.wait_for(state="visible", timeout=5000)
+                insert_btns.last.click(timeout=10000)
+            except Exception:
+                page.evaluate('''() => {
+                    const btns = Array.from(document.querySelectorAll('button'));
+                    const target = btns.filter(b => b.textContent.includes('삽입') || b.textContent.includes('Insert')).pop();
+                    if(target && !target.disabled) target.click();
+                }''')
             
             print(f"[4/5] ✨ 소스 이름을 '{title}'(으)로 변경 시도 중...")
             time.sleep(5) # 소스 분석 및 UI 업데이트 대기
@@ -130,6 +145,9 @@ def post_to_notebooklm(filepath, notebook_url):
             
         except Exception as e:
             print(f"❌ 스크립트 실행 중 치명적인 오류 발생: {e}")
+            if 'page' in locals():
+                page.screenshot(path="debug_timeout.png")
+                print("📸 디버그 스크린샷이 debug_timeout.png로 저장되었습니다. 확인해보세요!")
             time.sleep(5)
         finally:
             if 'browser' in locals():
