@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBS 영어 내신 대비 학습지</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;700&family=Outfit:wght@400;700&display=swap');
+
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --box-bg: #fff;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: 'Outfit', 'Noto Serif KR', serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--box-bg);
+            padding: 60px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-radius: 8px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .passage-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 20px;
+            background-color: var(--accent-color);
+            margin-right: 10px;
+        }
+
+        .content-box {
+            background-color: #fff;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 5px;
+            text-align: justify;
+        }
+
+        .en-text {
+            font-family: 'Outfit', sans-serif;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .ko-text {
+            font-family: 'Noto Serif KR', serif;
+            font-size: 15px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* 빈칸 스타일 */
+        .blank-box {
+            display: inline-block;
+            border: 1px solid #333;
+            min-width: 80px;
+            height: 24px;
+            vertical-align: bottom;
+            margin: 0 5px;
+            background-color: #fdfdfd;
+            text-align: center;
+            font-weight: bold;
+            color: transparent; /* 정답 숨김 */
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .blank-box:hover, .blank-box.revealed {
+            color: var(--accent-color);
+            background-color: #eaf6ff;
+            border-color: var(--accent-color);
+        }
+
+        .blank-instruction {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 10px;
+            text-align: right;
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .container {
+                box-shadow: none;
+                padding: 0;
+                width: 100%;
+            }
+            .blank-box {
+                color: transparent !important; /* 인쇄 시 정답 강제 숨김 */
+                border: 1px solid #333 !important;
+                background-color: #fff !important;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EBS 연계교재 분석 학습지</h1>
+            <div class="subtitle">(주) 1인 에듀테크 기업 - 김부장 제작</div>
+        </header>
+
+        <div class="passage-info">
+            <span>교재: 2025학년도 EBS 수능특강 영어독해연습</span>
+            <span>출처: 1강 Exercise 4번</span>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Original Text (원문)</div>
+            <div class="content-box en-text">
+                The communicative relevance of algorithms is actually related to their <strong>independence</strong> from <strong>understanding</strong>. We are facing a way to process data (and to manage information) that is different from human information processing and understanding. My assumption is that this difference is not a <strong>liability</strong> but instead is the very root of the success of these technologies. Just as human beings first became able to <strong>fly</strong> when they abandoned the idea of building machines that flap their wings like birds, digital information processing managed to achieve the results that we see today after abandoning the ambition to <strong>reproduce</strong> in digital form the processes of the human mind. Now that they no longer try to resemble our <strong>consciousness</strong>, algorithms have become more and more able to act as competent communication partners, responding appropriately to our requests and providing information neither constructed nor reconstructible by a human mind.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Translation (해석)</div>
+            <div class="content-box ko-text">
+                알고리즘의 의사소통적 적절성은 사실은 이해로부터 독립된 것과 관련이 있다. 우리는 인간의 정보 처리 및 이해와는 다른, 데이터 처리 (그리고 정보 관리) 방식에 직면하고 있다. 나의 추정은 이러한 차이가 골칫거리가 아니라 대신에 이러한 기술이 성공할 수 있는 바로 그 근원이라는 것이다. 인간이 새처럼 날개를 퍼덕이는 기계를 만들겠다는 생각을 버렸을 때 비로소 날 수 있게 된 것과 꼭 마찬가지로, 디지털 정보 처리는 인간 정신의 (작동) 과정을 디지털 형태로 재현하겠다는 야망을 버린 후에 우리가 오늘날 목격하는 성과를 거둘 수 있었다. 알고리즘이 더 이상 우리의 의식을 닮으려고 하지 않기 때문에, 그것은 우리의 요청에 적절히 응답하고 인간의 정신에 의해 구성되지도 않고 재현될 수도 없는 정보를 제공하면서, 유능한 의사소통 동반자의 역할을 할 수 있게 되었다.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-title">Fill in the Blanks (빈칸 테스트)</div>
+            <div class="blank-instruction no-print">💡 빈칸을 클릭하면 정답을 확인할 수 있습니다. 인쇄 시에는 정답이 보이지 않습니다.</div>
+            <div class="content-box en-text">
+                The communicative relevance of algorithms is actually related to their <span class="blank-box" onclick="this.classList.toggle('revealed')">independence</span> from <span class="blank-box" onclick="this.classList.toggle('revealed')">understanding</span>. We are facing a way to process data that is different from human information processing. My assumption is that this difference is not a <span class="blank-box" onclick="this.classList.toggle('revealed')">liability</span> but instead is the very root of the success of these technologies. Just as human beings first became able to <span class="blank-box" onclick="this.classList.toggle('revealed')">fly</span> when they abandoned the idea of building machines that flap their wings like birds, digital information processing managed to achieve results after abandoning the ambition to <span class="blank-box" onclick="this.classList.toggle('revealed')">reproduce</span> in digital form the processes of the human mind. Now that they no longer try to resemble our <span class="blank-box" onclick="this.classList.toggle('revealed')">consciousness</span>, algorithms have become competent communication partners.
+            </div>
+        </div>
+    </div>
+</body>
+</html>

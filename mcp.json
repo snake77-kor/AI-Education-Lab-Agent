@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "notebooklm": {
+      "command": "/usr/local/bin/npx",
+      "args": [
+        "-y",
+        "notebooklm-mcp@latest"
+      ],
+      "env": {}
+    }
+  }
+}

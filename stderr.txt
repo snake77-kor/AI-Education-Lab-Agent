@@ -1,0 +1,64 @@
+╔══════════════════════════════════════════════════════════╗
+║                                                          ║
+║           NotebookLM MCP Server v1.0.0                   ║
+║                                                          ║
+║   Chat with Gemini 2.5 through NotebookLM via MCP       ║
+║                                                          ║
+╚══════════════════════════════════════════════════════════╝
+
+[36mℹ️  [03:04:24] 🌐 SharedContextManager initialized (PERSISTENT MODE)[0m
+[36mℹ️  [03:04:24]   Chrome Profile: /Users/byeongtaekkim/Library/Application Support/notebooklm-mcp/chrome_profile[0m
+[32m✅  [03:04:24]   Fingerprint: PERSISTENT across restarts! 🎯[0m
+[36mℹ️  [03:04:24] 🎯 SessionManager initialized[0m
+[36mℹ️  [03:04:24]   Max sessions: 10[0m
+[36mℹ️  [03:04:24]   Timeout: 900s (15 minutes)[0m
+[32m✅  [03:04:24]   ✅ Loaded library with 0 notebooks[0m
+[36mℹ️  [03:04:24] 📚 NotebookLibrary initialized[0m
+[36mℹ️  [03:04:24]   Library path: /Users/byeongtaekkim/Library/Application Support/notebooklm-mcp/library.json[0m
+[36mℹ️  [03:04:24]   Notebooks: 0[0m
+[36mℹ️  [03:04:24] 🚀 NotebookLM MCP Server initialized[0m
+[36mℹ️  [03:04:24]   Version: 1.1.0[0m
+[36mℹ️  [03:04:24]   Node: v24.12.0[0m
+[36mℹ️  [03:04:24]   Platform: darwin[0m
+[36mℹ️  [03:04:24]   Profile: full (16 tools active)[0m
+[36mℹ️  [03:04:24] 🎯 Starting NotebookLM MCP Server...[0m
+[36mℹ️  [03:04:24] [0m
+[36mℹ️  [03:04:24] 📝 Configuration:[0m
+[36mℹ️  [03:04:24]   Config Dir: /Users/byeongtaekkim/Library/Preferences/notebooklm-mcp[0m
+[36mℹ️  [03:04:24]   Data Dir: /Users/byeongtaekkim/Library/Application Support/notebooklm-mcp[0m
+[36mℹ️  [03:04:24]   Headless: true[0m
+[36mℹ️  [03:04:24]   Max Sessions: 10[0m
+[36mℹ️  [03:04:24]   Session Timeout: 900s[0m
+[36mℹ️  [03:04:24]   Stealth: true[0m
+[36mℹ️  [03:04:24] [0m
+[32m✅  [03:04:24] ✅ MCP Server connected via stdio[0m
+[32m✅  [03:04:24] 🎉 Ready to receive requests from Claude Code![0m
+[36mℹ️  [03:04:24] [0m
+[36mℹ️  [03:04:24] 💡 Available tools:[0m
+[36mℹ️  [03:04:24]   - ask_question: # Conversational Research Partner (NotebookLM • Gemini 2.5 • Session RAG)...[0m
+[36mℹ️  [03:04:24]   - add_notebook: PERMISSION REQUIRED — Only when user explicitly asks to add a notebook....[0m
+[36mℹ️  [03:04:24]   - list_notebooks: List all library notebooks with metadata (name, topics, use cases, URL). Use thi...[0m
+[36mℹ️  [03:04:24]   - get_notebook: Get detailed information about a specific notebook by ID...[0m
+[36mℹ️  [03:04:24]   - select_notebook: Set a notebook as the active default (used when ask_question has no notebook_id)...[0m
+[36mℹ️  [03:04:24]   - update_notebook: Update notebook metadata based on user intent....[0m
+[36mℹ️  [03:04:24]   - remove_notebook: Dangerous — requires explicit user confirmation....[0m
+[36mℹ️  [03:04:24]   - search_notebooks: Search library by query (name, description, topics, tags). Use to propose releva...[0m
+[36mℹ️  [03:04:24]   - get_library_stats: Get statistics about your notebook library (total notebooks, usage, etc.)...[0m
+[36mℹ️  [03:04:24]   - list_sessions: List all active sessions with stats (age, message count, last activity). Use to ...[0m
+[36mℹ️  [03:04:24]   - close_session: Close a specific session by session ID. Ask before closing if the user might sti...[0m
+[36mℹ️  [03:04:24]   - reset_session: Reset a session's chat history (keep same session ID). Use for a clean slate whe...[0m
+[36mℹ️  [03:04:24]   - get_health: Get server health status including authentication state, active sessions, and co...[0m
+[36mℹ️  [03:04:24]   - setup_auth: Google authentication for NotebookLM access - opens a browser window for manual ...[0m
+[36mℹ️  [03:04:24]   - re_auth: Switch to a different Google account or re-authenticate. Use this when:...[0m
+[36mℹ️  [03:04:24]   - cleanup_data: ULTRATHINK Deep Cleanup - Scans entire system for ALL NotebookLM MCP data files ...[0m
+[36mℹ️  [03:04:24] [0m
+[36mℹ️  [03:04:24] 📖 For documentation, see: README.md[0m
+[36mℹ️  [03:04:24] 📖 For MCP details, see: MCP_INFOS.md[0m
+[36mℹ️  [03:04:24] [0m
+[36mℹ️  [03:04:29] 
+🛑 Received SIGINT, shutting down gracefully...[0m
+[36mℹ️  [03:04:29] 🧹 Cleaning up tool handlers...[0m
+[33m⚠️  [03:04:29] 🛑 Closing shared context (no active sessions)...[0m
+[32m✅  [03:04:29] ✅ All sessions closed[0m
+[32m✅  [03:04:29] ✅ Tool handlers cleanup complete[0m
+[32m✅  [03:04:29] ✅ Shutdown complete[0m
