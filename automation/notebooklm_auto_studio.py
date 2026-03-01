@@ -122,19 +122,55 @@ def post_to_notebooklm(filepath, notebook_url):
                 
             time.sleep(2)
             
-            # 5. 슬라이드 자료 생성 클릭 (서술형 연구실은 생략)
+            # 5. 슬라이드 자료 생성 클릭 (특정 소스 단독 지정 및 서술형 연구실은 생략)
             if "서술형" in title:
                 print(f"[5/5] ⏭️ 서술형 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
             else:
-                print(f"[5/5] 🎉 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
+                print(f"[5/5] 🎉 특정 소스 단독 선택 및 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
                 try:
-                    # 슬라이드 자료 찾기 (div, span 등 다양하게 매핑)
+                    # 1) 전체 소스 선택 해제 (기본 전체선택일 경우 방지)
+                    page.evaluate('''() => {
+                        const els = Array.from(document.querySelectorAll('*'));
+                        const clearBtn = els.find(el => 
+                            (el.textContent === '선택 해제' || el.textContent === '모두 선택 해제' || el.textContent === 'Clear selection') && 
+                            (el.tagName === 'BUTTON' || el.tagName === 'SPAN' || el.tagName === 'DIV')
+                        );
+                        if (clearBtn) clearBtn.click();
+                        
+                        // 또는 명시적으로 켜진 체크박스들 모두 끄기
+                        const checkboxes = document.querySelectorAll('div[role="checkbox"], input[type="checkbox"]');
+                        checkboxes.forEach(cb => {
+                            if (cb.getAttribute('aria-checked') === 'true' || cb.checked) {
+                                cb.click();
+                            }
+                        });
+                    }''')
+                    time.sleep(1)
+                    
+                    # 2) 방금 업로드한 소스 단독 체크
+                    page.evaluate('''(title) => {
+                        const els = Array.from(document.querySelectorAll('*'));
+                        const target = els.find(el => el.textContent && el.textContent.includes(title));
+                        if (target) {
+                            const container = target.closest('div[role="listitem"]') || target.closest('div[role="row"]') || target.parentElement;
+                            if (container) {
+                                const checkbox = container.querySelector('div[role="checkbox"], input[type="checkbox"]');
+                                if (checkbox) checkbox.click();
+                                else target.click();
+                            } else {
+                                target.click();
+                            }
+                        }
+                    }''', title)
+                    time.sleep(1)
+                    
+                    # 3) 슬라이드 자료 생성 (선택된 단일 소스 바탕)
                     slide_btn = page.evaluate('''(texts) => {
                         const elements = Array.from(document.querySelectorAll("*"));
                         const target = elements.find(el => texts.includes(el.textContent.trim()) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
                         if(target) target.click();
                     }''', ["슬라이드 자료", "Slide material"])
-                    print("✅ [슬라이드 자료] 스튜디오 생성을 요청했습니다.")
+                    print("✅ [단일 대상] 스튜디오 슬라이드 생성을 요청했습니다.")
                 except Exception as e:
                      print(f"⚠️ 슬라이드 버튼 클릭 중 오류 발생: {e}")
                  
