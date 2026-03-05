@@ -46,148 +46,184 @@ def post_to_notebooklm(filepath, notebook_url):
                 print("✅ 구글 로그인 세션 확인 완료! (자동 통과)")
             
             # 노트북 로딩 대기
-            print(f"[3/5] 📝 소스 추가를 진행합니다...")
+            print(f"[3/5] 📝 새 메모(Note)를 추가하고 내용을 입력합니다...")
             
-            # 1. 새 소스 추가 버튼 클릭 (정확한 텍스트 매칭 대신 내부 텍스트 탐색 후 클릭)
+            # 1. 새 메모 버튼 클릭
             try:
-                page.wait_for_selector('text=소스 추가', timeout=60000)
-                page.locator('text=소스 추가').first.click()
-            except Exception:
-                # 플랜 B: 화면에서 텍스트가 '소스 추가'인 걸 찾아서 강제 클릭
-                page.evaluate('''() => {
-                    const els = Array.from(document.querySelectorAll('*'));
-                    const target = els.find(el => el.textContent && el.textContent.includes('소스 추가') && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
-                    if(target) target.click();
-                }''')
+                add_note_btn = page.locator('.add-note-button, button:has-text("새 메모")').last
+                add_note_btn.wait_for(state="visible", timeout=15000)
+                add_note_btn.click()
+            except Exception as e:
+                raise Exception(f"새 메모 버튼을 찾을 수 없습니다: {e}")
             
-            time.sleep(1)
+            time.sleep(2)
             
-            # 2. 복사된 텍스트 선택
-            page.evaluate('''(texts) => {
-                const elements = Array.from(document.querySelectorAll("*"));
-                const target = elements.find(el => texts.includes(el.textContent.trim()));
-                if(target) target.click();
-            }''', ["복사된 텍스트", "복사한 텍스트", "Copied text", "Pasted text"])
-            
+            # 2. 제목 입력
+            try:
+                title_in = page.locator('input.note-header__editable-title').last
+                title_in.fill(title)
+                title_in.press("Enter")
+            except Exception as e:
+                print(f"⚠️ 메모 제목 입력 오류: {e}")
+
             time.sleep(1)
             
             # 3. 텍스트 입력창 찾고 타이핑
-            # 모달창이 열린 이후 렌더링된 마지막 textarea일 확률이 높음 (첫 번째는 주로 하단 메인 채팅창)
-            textarea = page.locator('textarea').last
-            textarea.wait_for(state="visible", timeout=10000)
-            textarea.click()
-            
-            # 간혹 fill이 Angular 이벤트를 트리거하지 않아 '삽입' 버튼이 비활성화되는 것을 방지
-            textarea.fill(content)
-            textarea.press("Space")
-            page.keyboard.press("Backspace")
-            
-            time.sleep(1)
-            
-            # 4. 삽입 클릭
-            # NotebookLM의 다이얼로그 안의 삽입 버튼 (비활성화 상태가 풀리기까지 대기)
-            insert_btns = page.locator('button:has-text("삽입"), button:has-text("Insert")')
             try:
-                insert_btns.last.wait_for(state="visible", timeout=5000)
-                insert_btns.last.click(timeout=10000)
-            except Exception:
-                page.evaluate('''() => {
-                    const btns = Array.from(document.querySelectorAll('button'));
-                    const target = btns.filter(b => b.textContent.includes('삽입') || b.textContent.includes('Insert')).pop();
-                    if(target && !target.disabled) target.click();
-                }''')
-            
-            print(f"[4/5] ✨ 소스 이름을 '{title}'(으)로 변경 시도 중...")
-            time.sleep(5) # 소스 분석 및 UI 업데이트 대기
-            
-            # 이름 변경 시도 (UI가 복잡하므로 실패해도 진행)
-            try:
-                # 점 3개 메뉴 버튼 찾기
-                more_btns = page.locator('button[aria-label="소스 옵션"], button[aria-label="옵션"], button[aria-label="더보기"], button[aria-label="Options"], button[aria-label="Source options"]')
-                if more_btns.count() > 0:
-                    more_btns.first.click()
-                    time.sleep(1)
-                    
-                    rename_opt = page.locator('text="이름 바꾸기" | text="소스 이름 바꾸기" | text="Rename"')
-                    if rename_opt.count() > 0:
-                        rename_opt.first.click()
-                        time.sleep(1)
-                        
-                        rename_input = page.locator('input[type="text"]').first
-                        if rename_input.count() > 0:
-                            rename_input.fill(title)
-                            rename_input.press('Enter')
+                content_in = page.locator('div.ql-editor').last
+                content_in.click()
+                content_in.fill(content)
+                time.sleep(2)
             except Exception as e:
-                print(f"⚠️ 이름 변경 시도 실패 (수동 변경 권장). 사유: {e}")
+                print(f"⚠️ 메모 내용 입력 오류: {e}")
+            
+            print(f"[4/5] ✨ 작성된 메모를 '{title}' 소스로 변환 시도 중...")
+            
+            # 4. 소스로 전환 버튼 클릭
+            try:
+                convert_btn = page.locator('button:has-text("소스로 전환"), button[aria-label*="소스로 전환"]').last
+                convert_btn.wait_for(state="visible", timeout=10000)
+                convert_btn.click()
+                print("✅ [소스로 전환] 버튼을 성공적으로 클릭하여 소스로 추가했습니다.")
+            except Exception as e:
+                print(f"⚠️ 소스로 전환 버튼 클릭 실패 (수동 버튼 클릭 필요할 수 있음): {e}")
                 
-            time.sleep(2)
+            time.sleep(4) 
+            
+            # 5. 메모 보기 닫기 (팝업이 열려있으면 닫아주어 배경 UI와 스튜디오가 클릭되도록 함)
+            try:
+                close_note_btn = page.locator('button[aria-label="메모 보기 닫기"], button[aria-label="Close note view"]').last
+                if close_note_btn.count() > 0:
+                    close_note_btn.click()
+                    print("✅ 메모 보기 팝업을 닫았습니다.")
+            except Exception as e:
+                pass
+                
+            time.sleep(4) # 소스 변환 및 동기화 대기 시간
             
             # 5. 슬라이드 자료 생성 클릭 (특정 소스 단독 지정 및 서술형 연구실은 생략)
-            if "서술형" in title:
-                print(f"[5/5] ⏭️ 서술형 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
+            if "서술형" in title or "수능 영어" in title:
+                print(f"[5/5] ⏭️ 서술형/수능 영어 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
             else:
                 print(f"[5/5] 🎉 특정 소스 단독 선택 및 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
                 try:
-                    # 1) 전체 소스 선택 해제 (기본 전체선택일 경우 방지)
+                    # 1) 전체 소스 선택 해제
                     page.evaluate('''() => {
-                        const els = Array.from(document.querySelectorAll('*'));
-                        const clearBtn = els.find(el => 
-                            (el.textContent === '선택 해제' || el.textContent === '모두 선택 해제' || el.textContent === 'Clear selection') && 
-                            (el.tagName === 'BUTTON' || el.tagName === 'SPAN' || el.tagName === 'DIV')
-                        );
-                        if (clearBtn) clearBtn.click();
-                        
-                        // 또는 명시적으로 켜진 체크박스들 모두 끄기
-                        const checkboxes = document.querySelectorAll('div[role="checkbox"], input[type="checkbox"]');
-                        checkboxes.forEach(cb => {
-                            if (cb.getAttribute('aria-checked') === 'true' || cb.checked) {
-                                cb.click();
-                            }
-                        });
+                        let allCheck = document.querySelector('input[aria-label="모든 출처 선택"]');
+                        if (allCheck && allCheck.checked) {
+                            allCheck.click();
+                        } else {
+                            const clearBtn = Array.from(document.querySelectorAll('*')).find(el => 
+                                (el.textContent === '선택 해제' || el.textContent === '모두 선택 해제' || el.textContent === 'Clear selection') && 
+                                (el.tagName === 'BUTTON' || el.tagName === 'SPAN' || el.tagName === 'DIV')
+                            );
+                            if (clearBtn) clearBtn.click();
+                        }
                     }''')
                     time.sleep(1)
                     
                     # 2) 방금 업로드한 소스 단독 체크
-                    page.evaluate('''(title) => {
-                        const els = Array.from(document.querySelectorAll('*'));
-                        const target = els.find(el => el.textContent && el.textContent.includes(title));
-                        if (target) {
-                            const container = target.closest('div[role="listitem"]') || target.closest('div[role="row"]') || target.parentElement;
-                            if (container) {
-                                const checkbox = container.querySelector('div[role="checkbox"], input[type="checkbox"]');
-                                if (checkbox) checkbox.click();
-                                else target.click();
-                            } else {
-                                target.click();
-                            }
-                        }
-                    }''', title)
+                    # UI 한계로 제목 매칭이 완벽하지 않을 수 있으나, 가장 최근 추가된 소스가 상단/하단에 위치
+                    # 여기서는 그냥 title 기반으로 aria-label 체크 시도
+                    page.evaluate(f'''(title) => {{
+                        // Exact match required because '퀴즈: Point 07' and '강의안: Point 07' are different
+                        let cbs = Array.from(document.querySelectorAll('input[type="checkbox"]'));
+                        let target = cbs.find(c => c.getAttribute('aria-label') && c.getAttribute('aria-label').includes(title));
+                        if(target && !target.checked) {{
+                            target.click();
+                        }}
+                    }}''', title)
                     time.sleep(1)
                     
-                    # 3) 슬라이드 자료 생성 (선택된 단일 소스 바탕)
-                    slide_btn = page.evaluate('''(texts) => {
-                        const elements = Array.from(document.querySelectorAll("*"));
-                        const target = elements.find(el => texts.includes(el.textContent.trim()) && el.tagName !== 'SCRIPT' && el.tagName !== 'STYLE');
-                        if(target) target.click();
-                    }''', ["슬라이드 자료", "Slide material"])
-                    print("✅ [단일 대상] 스튜디오 슬라이드 생성을 요청했습니다.")
+                    # 3) 슬라이드 자료 버튼 클릭
+                    try:
+                        # Try pure locator first
+                        slide_txt = page.locator('text="슬라이드 자료"')
+                        if slide_txt.count() > 0:
+                            slide_txt.first.click(force=True)
+                            print("✅ [단일 대상] 스튜디오 슬라이드 생성을 요청했습니다 (Playwright native).")
+                        else:
+                            page.evaluate('''() => {
+                                // Find element containing "슬라이드 자료" Text and is a clickable container
+                                let els = Array.from(document.querySelectorAll('*')).filter(el => 
+                                    el.childNodes.length === 1 && 
+                                    el.childNodes[0].nodeType === 3 && 
+                                    el.textContent.trim() === '슬라이드 자료'
+                                );
+                                
+                                if (els.length > 0) {
+                                    // Usually it's a span inside a button or div, clicking the element or its parent
+                                    let clickable = els[0].closest('button, [role="button"], .create-artifact-button-container, .ng-star-inserted') || els[0];
+                                    clickable.click();
+                                } else {
+                                    throw new Error("슬라이드 자료 버튼을 찾을 수 없습니다.");
+                                }
+                            }''')
+                            print("✅ [단일 대상] 스튜디오 슬라이드 생성을 요청했습니다 (JS execution).")
+                        
+                        time.sleep(20) # 슬라이드 생성 대기시간 증가 (15초 -> 20초)
+                        
+                        # 생성된 슬라이드 파일 이름도 소스와 동일하게 변경 시도
+                        print(f"[6/6] 🎬 슬라이드 이름을 '{title}'(으)로 동기화 변경 시도 중...")
+                        page.evaluate(f'''() => {{
+                            // 스튜디오 결과물 영역에서 "소스 1개"가 포함된 것을 찾아 더보기 옵션 열기
+                            // 기존에는 pfe-card, article 내에 있었으나 class나 구성이 달라질 수 있으므로 강건하게 작성
+                            let container = Array.from(document.querySelectorAll('*')).find(el => 
+                                el.textContent && el.textContent.includes("소스 1개") && 
+                                (el.tagName === 'PFE-CARD' || el.tagName === 'ARTICLE' || el.getAttribute('role') === 'listitem' || el.classList.contains('artifact-card'))
+                            );
+                            
+                            if (container) {{
+                                let btn = container.querySelector('button[aria-haspopup="menu"], button[aria-label*="더보기"], button[aria-label*="옵션"]');
+                                if (btn) btn.click();
+                            }} else {{
+                                let mBtns = Array.from(document.querySelectorAll('button[aria-haspopup="menu"], button[aria-label*="더보기"]')).filter(b => {{
+                                    return b.parentElement && b.parentElement.textContent.includes("소스 1개");
+                                }});
+                                if(mBtns.length > 0) mBtns[0].click();
+                            }}
+                        }}''')
+                        time.sleep(2)
+                        
+                        page.evaluate(f'''() => {{
+                            // Click the rename option
+                            let opts = Array.from(document.querySelectorAll('[role="menuitem"]'));
+                            let r_opt = opts.find(o => o.textContent && (o.textContent.includes("이름 바꾸기") || o.textContent.includes("Rename")));
+                            if (r_opt) {{
+                                 r_opt.click();
+                            }}
+                        }}''')
+                        time.sleep(2)
+
+                        # 새 이름 입력 후 저장
+                        try:
+                            # Use .last on visible inputs to avoid modifying the Lab Title
+                            s_inputs = page.locator('input[type="text"]:visible, textarea:visible, input.title-input:visible')
+                            if s_inputs.count() > 0:
+                                st_input = s_inputs.last
+                                st_input.fill(title)
+                                time.sleep(0.5)
+                                st_input.press("Enter")
+                        except Exception as err:
+                            print(f"⚠️ 슬라이드 이름 입력 중 오류: {err}")
+                    except Exception as e:
+                        print(f"⚠️ 슬라이드 생성 / 수정 오류: {e}")
                 except Exception as e:
-                     print(f"⚠️ 슬라이드 버튼 클릭 중 오류 발생: {e}")
+                    print(f"⚠️ 슬라이드 연계 기능 전반 중 오류 발생: {e}")
                  
             print("\n--------------------------------------------------------------")
             print("🎉 [작업 완료] NotebookLM 소스 업로드 및 자동화 파이프라인이 종료되었습니다.")
-            print(f"👉 브라우저를 확인하시어 이름 변경이나 슬라이드 생성이 잘 적용되었는지 체크해 주세요.")
+            print(f"👉 브라우저를 확인하시어 이름 변경이나 슬라이드 생성이 잘 적용되었는지 최종 체크해 주세요.")
             print("--------------------------------------------------------------")
             
-            # 브라우저가 바로 닫히지 않고 결과를 눈으로 볼 수 있게 대기
             time.sleep(5)
             
         except Exception as e:
             print(f"❌ 스크립트 실행 중 치명적인 오류 발생: {e}")
             if 'page' in locals():
                 page.screenshot(path="debug_timeout.png")
-                print("📸 디버그 스크린샷이 debug_timeout.png로 저장되었습니다. 확인해보세요!")
             time.sleep(5)
+            sys.exit(1)  # 에러가 발생한 경우 무조건 비정상 종료
         finally:
             if 'browser' in locals():
                 browser.close()
