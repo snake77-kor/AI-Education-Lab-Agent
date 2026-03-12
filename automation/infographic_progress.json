@@ -20,18 +20,23 @@
     "completed": false
   },
   "csat_vocabulary": {
-    "current_day": 14,
+    "current_day": 12,
     "max_day": 20,
     "completed": false
   },
   "csat_grammar": {
-    "current_point": 15,
+    "current_point": 13,
     "max_point": 25,
     "completed": false
   },
   "ms_grammar": {
-    "current_point": 12,
+    "current_point": 16,
     "max_point": 40,
+    "completed": false
+  },
+  "hs_grammar": {
+    "current_lecture": 11,
+    "max_lecture": 48,
     "completed": false
   }
 }
