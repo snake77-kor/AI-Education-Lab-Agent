@@ -1,3 +1,6 @@
-2026/03/05-13:33:00.390 4a25f7 Reusing MANIFEST /Users/byeongtaekkim/Documents/multi-AI agents/automation/naver_profile/Default/Local Storage/leveldb/MANIFEST-000001
-2026/03/05-13:33:00.393 4a25f7 Recovering log #10
-2026/03/05-13:33:00.394 4a25f7 Reusing old log /Users/byeongtaekkim/Documents/multi-AI agents/automation/naver_profile/Default/Local Storage/leveldb/000010.log 
+2026/03/13-07:41:07.766 87a7d1 Reusing MANIFEST /Users/byeongtaekkim/Documents/multi-AI agents/automation/naver_profile/Default/Local Storage/leveldb/MANIFEST-000001
+2026/03/13-07:41:07.770 87a7d1 Recovering log #10
+2026/03/13-07:41:07.771 87a7d1 Reusing old log /Users/byeongtaekkim/Documents/multi-AI agents/automation/naver_profile/Default/Local Storage/leveldb/000010.log 
+2026/03/13-07:41:19.902 87a7d5 Level-0 table #14: started
+2026/03/13-07:41:19.905 87a7d5 Level-0 table #14: 10943 bytes OK
+2026/03/13-07:41:19.908 87a7d5 Delete type=0 #10

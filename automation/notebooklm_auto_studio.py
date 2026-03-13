@@ -101,9 +101,9 @@ def post_to_notebooklm(filepath, notebook_url):
                 
             time.sleep(4) # 소스 변환 및 동기화 대기 시간
             
-            # 5. 슬라이드 자료 생성 클릭 (특정 소스 단독 지정 및 서술형 연구실은 생략)
-            if "서술형" in title or "수능 영어" in title:
-                print(f"[5/5] ⏭️ 서술형/수능 영어 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
+            # 5. 슬라이드 자료 생성 클릭 (특정 소스 단독 지정 및 서술형/퀴즈 연구실은 생략)
+            if "서술형" in title or "수능 영어" in title or "퀴즈" in title or "quiz" in title.lower():
+                print(f"[5/5] ⏭️ 퀴즈/서술형/수능 영어 연구실 파일이므로 '슬라이드 자료' 생성을 생략합니다.")
             else:
                 print(f"[5/5] 🎉 특정 소스 단독 선택 및 스튜디오 '슬라이드 자료' 생성을 시작합니다...")
                 try:
