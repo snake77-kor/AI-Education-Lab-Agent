@@ -1,0 +1,415 @@
+add
+노트북 만들기
+trending_up
+분석
+share
+공유
+settings
+설정
+PRO
+출처
+dock_to_right
+add
+소스 추가
+search
+language
+keyboard_arrow_down
+search_spark
+keyboard_arrow_down
+arrow_forward
+모든 소스 선택
+drive_pdf
+2018학년도 수능 영어.pdf
+drive_pdf
+2018학년도_11월 대수능 해설.pdf
+drive_pdf
+2019학년도_대학수학능력시험_문제 및 정답.pdf
+drive_pdf
+2019학년도_대학수학능력시험_정답_짝수.pdf
+drive_pdf
+2020학년도_대학수학능력시험_영어_홀.pdf
+drive_pdf
+2020학년도_대학수학능력시험_정답 및 해설.pdf
+drive_pdf
+2021학년도_대학수학능력시험_3교시_영여영역_정답표.pdf
+drive_pdf
+2021학년도_대학수학능력시험_3교시_영여영역_홀수형.pdf
+drive_pdf
+2022학년도_대학수학능력시험_영어_문제지.pdf
+drive_pdf
+2022학년도_대학수학능력시험_영어_정답지.pdf
+drive_pdf
+2023학년도_대학수학능력시험_영어_답안지.pdf
+drive_pdf
+2023학년도_대학수학능력시험_영어_문제지.pdf
+drive_pdf
+2024학년도_대학수학능력시험_3교시_영여영역_정답표.pdf
+drive_pdf
+2024학년도_대학수학능력시험_3교시_영여영역_홀수형.pdf
+drive_pdf
+2025학년도__대학수학능력시험_3교시_영여영역_정답표.pdf
+drive_pdf
+2025학년도_대학수학능력시험_3교시_영여영역_홀수형.pdf
+markdown
+2026-02-24_수능 어법과 어휘 퀴즈: Point 03 및 Day 02
+description
+2026-02-26_수능 어법과 어휘 퀴즈: Point 04 및 Day 03
+description
+2026-02-26_수능 어법과 어휘 퀴즈: Point 05 및 Day 04
+description
+2026-02-27_수능 어법과 어휘 퀴즈: Point 06 어법 및 Day 05 어휘
+description
+2026-02-28_수능 영어 연구실: Point 07 어법 및 Day 06 어휘
+description
+2026-03-02_수능 어법 및 어휘 퀴즈: Point 09 어법 및 Day 08 어휘
+drive_pdf
+2026학년도_대학수학능력시험_3교시_영어영역_해설지.pdf
+drive_pdf
+2026학년도_대학수학능력시험_3교시_영어영역_홀수형.pdf
+description
+붙여넣은 텍스트
+markdown
+수능 영어 문장 구조와 필수 어법 및 어휘 전략
+description
+수능 영어 어법 핵심 목차 (CSAT_Curriculum.md)
+description
+수능 필수 어휘 마스터 리스트 (CSAT_Vocabulary_List.md)
+채팅
+tune
+more_vert
+📝
+수능 영어 연구실
+소스 28개
+2월 27일 금요일
+
+수능 영어 퀴즈를 생성해줘. 다음 두 파트를 모두 포함해서 하나의 잘 정리된 마크다운 결과물(블로그 포스팅용)로 만들어줘.
+파트 1: 수능 영어 어법 - Point 06. 수능 핵심 시제 (명백한 과거시제 vs 현재완료, 대과거/과거완료의 쓰임) 내용으로 객관식 3문제 출제. (도입부 인사말 + 객관식 문제 굵게 + 상세 해설)
+파트 2: 수능 필수 어휘 Day 05 - analyze, impact, acquire, relevant, aspect 영단어로 객관식 어휘 퀴즈 5문제 출제. (객관식 문제 + 상세 해설)
+친근하고 힘찬 동기부여되는 인사말을 처음에 포함해줘.
+
+👋 안녕하세요, 수험생 여러분! 수능 영어 연구실 '수 실장'입니다.
+수능을 향해 매일매일 땀 흘리며 전진하는 여러분의 끊임없는 노력과 열정을 진심으로 응원합니다! 🔥 가끔은 지치고 힘들 때도 있겠지만, 지금 여러분이 쌓아 올리는 이 하루하루의 작은 조각들이 모여 수능 날 최고의 결과라는 눈부신 기적을 만들어낼 거예요. 자신을 믿고, 오늘도 힘차게 달려볼까요? 🚀
+오늘은 수능 어법에서 단골로 출제되는 핵심 테마 **[Point 06. 수능 핵심 시제 (명백한 과거시제 vs 현재완료, 대과거/과거완료의 쓰임)]**를 완벽하게 정복하고, 수능 필수 어휘 마스터 리스트 Day 05의 단어들로 독해력의 뼈대를 튼튼하게 다져보겠습니다.
+자, 펜을 들고 집중해 주세요! ✍️
+
+--------------------------------------------------------------------------------
+
+Part 1. 실전 어법 3제 (Point 06. 수능 핵심 시제)
+수능 어법에서 시제 문제는 단순한 해석이 아니라, 문장 속에 숨어있는 **'시간의 단서(Time Marker)'**를 찾아내는 것이 핵심입니다. 다음 문제들을 풀며 시제의 감각을 날카롭게 다듬어 보세요.
+Q1. 다음 괄호 안에서 어법상 올바른 표현을 고르시오.
+Despite the ongoing debates, the committee [ has officially announced / officially announced ] the new environmental policy during the annual meeting last week.
+Q2. 다음 괄호 안에서 어법상 올바른 표현을 고르시오.
+Ever since the invention of the smartphone, the way people communicate and interact with each other [ changed / has changed ] dramatically across the globe.
+Q3. 다음 괄호 안에서 어법상 올바른 표현을 고르시오.
+By the time the rescue team finally arrived at the remote island, the stranded tourists [ already consumed / had already consumed ] all of their emergency food supplies.
+
+--------------------------------------------------------------------------------
+
+✅ Part 1. 정답 및 상세 해설
+Q1. 정답: officially announced
+[출제 포인트]: 명백한 과거 시점 부사구와 과거시제
+[상세 해설]: 문장 끝에 있는 **'last week(지난주에)'**라는 명백한 과거를 나타내는 시간 부사구가 핵심 단서입니다. 현재완료(has announced)는 과거부터 '현재'까지 영향을 미치는 시제이므로, 명백한 과거 시점을 나타내는 부사구(last week, yesterday, in 과거 연도 등)와는 절대 함께 쓸 수 없습니다. 따라서 단순 과거시제인 officially announced가 정답입니다.
+[해석]: 진행 중인 논쟁에도 불구하고, 위원회는 지난주 연례 회의에서 새로운 환경 정책을 공식적으로 발표했다.
+Q2. 정답: has changed
+[출제 포인트]: since(~이후로 쭉)와 현재완료시제
+[상세 해설]: 문장 앞에 **'Ever since(~이후로 쭉)'**가 쓰였습니다. 스마트폰이 발명된 과거의 어느 시점부터 '지금(현재)까지 계속해서' 의사소통 방식이 변해왔다는 의미를 나타내야 합니다. 따라서 과거의 일이 현재까지 이어짐을 나타내는 현재완료시제 has changed가 정답입니다.
+[해석]: 스마트폰의 발명 이후로 쭉, 사람들이 서로 소통하고 상호작용하는 방식은 전 세계적으로 극적으로 변화해 왔다.
+Q3. 정답: had already consumed
+[출제 포인트]: 과거 완료 (대과거)의 쓰임
+[상세 해설]: 구조를 보면 두 가지 과거 사건이 등장합니다. 1) 구조대가 도착했다 (arrived - 과거), 2) 관광객들이 비상식량을 다 소비했다. 문맥상 구조대가 도착한 과거 시점보다 비상식량을 다 소비해버린 것이 **'더 먼저 일어난 과거(대과거)'**입니다. 기준이 되는 과거(arrived)보다 앞선 시점을 명확히 표현하기 위해 과거완료 시제인 had already consumed를 쓰는 것이 정답입니다.
+[해석]: 구조대가 마침내 그 외딴섬에 도착했을 때쯤, 고립된 관광객들은 이미 그들의 모든 비상식량을 소비해 버린 상태였다.
+
+--------------------------------------------------------------------------------
+
+Part 2. 오늘의 필수 어휘 퀴즈 (Day 05)
+수능 독해 지문에서 요지와 빈칸을 뚫어내는 열쇠! Day 05의 핵심 어휘 [ analyze, impact, acquire, relevant, aspect ] 5개를 활용한 실전 객관식 퀴즈입니다. 문맥에 가장 잘 어울리는 단어를 골라보세요!
+Q1. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+In order to find the exact cause of the economic crisis, experts need to ( ) the provided data carefully. ① ignore ② analyze ③ acquire ④ impact ⑤ reject
+Q2. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+The invention of the internet has had a profound ( ) on the way we access and share information today. ① aspect ② illusion ③ origin ④ substitute ⑤ impact
+Q3. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+Children growing up in bilingual environments usually ( ) two languages naturally without formal instruction. ① abandon ② acquire ③ analyze ④ forbid ⑤ delay
+Q4. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+When writing an academic essay, please make sure to include only the information that is ( ) to your main topic. ① relevant ② outdated ③ indifferent ④ hostile ⑤ absolute
+Q5. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+The fascinating documentary explores every ( ) of the ancient civilization, from its architecture to its daily life. ① impact ② limit ③ aspect ④ rumor ⑤ deficit
+
+--------------------------------------------------------------------------------
+
+✅ Part 2. 정답 및 상세 해설
+Q1. 정답: ② analyze
+뜻: 분석하다
+해석: 경제 위기의 정확한 원인을 찾기 위해, 전문가들은 제공된 데이터를 주의 깊게 분석할 필요가 있다.
+오답 노트: ignore(무시하다), acquire(획득하다), impact(영향을 주다), reject(거절하다)
+Q2. 정답: ⑤ impact
+뜻: 영향, 충격
+해석: 인터넷의 발명은 오늘날 우리가 정보에 접근하고 공유하는 방식에 지대한 영향을 미쳤다.
+꿀팁: have an impact on (~에 영향을 미치다)이라는 필수 수거 표현으로 덩어리째 외워두면 좋습니다!
+Q3. 정답: ② acquire
+뜻: 획득하다, 얻다, 습득하다
+해석: 이중 언어 환경에서 자라는 아이들은 대개 공식적인 교육 없이도 자연스럽게 두 가지 언어를 습득한다.
+오답 노트: abandon(버리다), analyze(분석하다), forbid(금지하다), delay(미루다)
+Q4. 정답: ① relevant
+뜻: 관련된, 적절한
+해석: 학술 에세이를 쓸 때는 반드시 메인 주제와 관련된 정보만을 포함하도록 하세요.
+오답 노트: outdated(구식의), indifferent(무관심한), hostile(적대적인), absolute(절대적인)
+Q5. 정답: ③ aspect
+뜻: 측면, 양상
+해석: 그 흥미로운 다큐멘터리는 건축부터 일상생활에 이르기까지 고대 문명의 모든 측면을 탐구한다.
+오답 노트: limit(한계), rumor(소문), deficit(적자, 부족)
+
+--------------------------------------------------------------------------------
+
+💡 수 실장의 마무리 한마디: 어법은 '감'이 아니라 '정확한 근거(단서)'로 푸는 것입니다. 오늘 배운 시제의 단서들과 5개의 필수 어휘들을 꼭 복습 노트에 정리해 두세요! 여러분의 매일매일을 응원합니다. 내일 또 알찬 퀴즈로 만나요! 화이팅! 💯
+keep_pin
+메모에 저장
+copy_all
+thumb_up
+thumb_down
+2월 28일 토요일
+
+오늘의 수능 영어 퀴즈를 생성해줘. 다음 내용을 포함해서 하나의 잘 정리된 마크다운 결과물(블로그 포스팅용)로 만들어줘.
+
+
+
+
+제목: 2026-02-28_수능 영어 연구실: Point 07 어법 및 Day 06 어휘
+
+
+
+
+파트 1: 수능 영어 어법 - Point 07. to부정사 vs 동명사 선택 내용으로 객관식 3문제 출제. (도입부 인사말 + 객관식 문제 굵게 + 상세 해설)
+파트 2: 수능 필수 어휘 Day 06 - illustrate, estimate, clarify, persist, demonstrate 영단어로 객관식 어휘 퀴즈 5문제 출제. (객관식 문제 + 상세 해설)
+
+
+
+
+친근하고 힘찬 동기부여되는 인사말을 처음에 포함해줘. '수 실장'의 말머리를 사용해줘.
+
+2026-02-28_수능 영어 연구실: Point 07 어법 및 Day 06 어휘
+👋 안녕하세요, 수험생 여러분! 수능 영어 연구실 '수 실장'입니다.
+오늘 하루도 목표를 향해 치열하게 달려가고 계신가요? 쉼 없이 달리는 여러분의 열정과 끈기를 언제나 진심으로 응원합니다! 🔥 가끔은 성적이 오르지 않는 것 같아 불안할 때도 있겠지만, 지금 묵묵히 쌓아 올리는 이 하루하루의 작은 조각들이 모여 수능 날 여러분을 가장 빛나게 만들어줄 무기가 될 거예요. 자신을 믿고, 오늘도 힘차게 전진해 봅시다! 🚀
+오늘 우리가 정복할 어법 테마는 **[Point 07. to부정사 vs 동명사 선택 (동사별 목적어 취하기)]**입니다. 단순 암기 같지만, 문맥을 통한 의미 차이(특히 stop, remember, forget 등)를 구별하는 것이 수능 어법의 핵심 포인트입니다. 여기에 오늘자 필수 어휘 Day 06 단어들까지 알차게 준비했으니, 실전 감각을 끌어올려 보세요! ✍️
+
+--------------------------------------------------------------------------------
+
+Part 1. 실전 어법 3제 (Point 07. to부정사 vs 동명사 선택)
+동사가 어떤 형태(to-v / -ing)를 목적어로 취하는지, 혹은 형태에 따라 의미가 어떻게 달라지는지 문맥 속에서 꼼꼼히 파악해 보세요.
+Q1. 다음 괄호 안에서 어법상 올바른 표현을 고르시오. (2018학년도 대수능 기출 응용)
+In many cases the donation is so small — $10 or less — that if they stopped [ to think / thinking ], they would realize that the cost of processing the donation is likely to exceed any benefit it brings to the charity.
+Q2. 다음 괄호 안에서 어법상 올바른 표현을 고르시오.
+The project manager clearly remembered [ to review / reviewing ] the marketing proposal yesterday, but he couldn't find the document anywhere on his desk.
+Q3. 다음 괄호 안에서 어법상 올바른 표현을 고르시오.
+Notwithstanding the advantages of obtaining a patent, many innovators prefer to protect their innovation through secrecy, and they avoid [ to disclose / disclosing ] their proprietary information to the public.
+
+--------------------------------------------------------------------------------
+
+✅ Part 1. 정답 및 상세 해설
+Q1. 정답: to think1
+[출제 포인트]: stop + to부정사 vs 동명사 의미 구별
+[상세 해설]: stop은 동명사(-ing)를 목적어로 취해 '~하는 것을 그만두다'라는 의미를 가집니다. 반면 stop + to부정사는 '~하기 위해 가던 길(하던 일)을 멈추다'라는 부사적 용법의 목적을 나타냅니다. 문맥상 기부자들이 '생각하는 것을 멈추는' 것이 아니라, **'곰곰이 생각해 보기 위해 (잠시 행동을) 멈춘다면'**이라는 의미가 되어야 하므로 to think가 정답입니다.
+[해석]: 많은 경우 기부금은 10달러 이하의 매우 적은 금액이어서, 만약 그들이 곰곰이 생각해 보기 위해 멈춘다면, 그들은 기부금을 처리하는 비용이 그것이 자선단체에 가져다주는 모든 이점을 넘어서기 쉽다는 것을 알게 될 것이다.
+Q2. 정답: reviewing
+[출제 포인트]: remember + to부정사(미래) vs 동명사(과거)
+[상세 해설]: remember 뒤에 to부정사가 오면 '앞으로 ~할 것을 기억하다', 동명사(-ing)가 오면 '과거에 ~했던 것을 기억하다'라는 뜻이 됩니다. 문장에 명백한 과거 시점 부사 yesterday가 있으며, 내용상 어제 마케팅 제안서를 **'검토했던 것'**을 기억한다는 의미이므로 동명사인 reviewing이 정답입니다.
+[해석]: 프로젝트 매니저는 어제 마케팅 제안서를 검토했던 것을 분명히 기억했지만, 그의 책상 위 어디에서도 그 문서를 찾을 수 없었다.
+Q3. 정답: disclosing
+[출제 포인트]: 동명사를 목적어로 취하는 동사 (avoid)
+[상세 해설]: avoid(피하다)는 대표적으로 동명사(-ing)만을 목적어로 취하는 동사입니다. (cf. enjoy, mind, finish, postpone 등). 따라서 to disclose는 올 수 없으며, disclosing이 정답입니다.
+[해석]: 특허를 얻는 것의 장점들에도 불구하고, 많은 혁신가들은 비밀 유지를 통해 자신들의 혁신을 보호하는 것을 선호하며, 그들은 대중에게 자신들의 독점적인 정보를 공개하는 것을 피한다.
+
+--------------------------------------------------------------------------------
+
+Part 2. 오늘의 필수 어휘 퀴즈 (Day 06)
+수능 독해에서 문맥을 뚫어내는 핵심 열쇠! Day 06의 필수 어휘 [ illustrate, estimate, clarify, persist, demonstrate ] 5개를 활용한 실전 객관식 퀴즈입니다.
+Q1. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+In order to help the students understand the complex theory, the professor used a simple diagram to ( ) the concept. ① estimate ② ignore ③ clarify ④ illustrate ⑤ persist
+Q2. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+Environmental experts ( ) that the new eco-friendly policy will reduce carbon emissions by 20% over the next decade. ① demonstrate ② estimate ③ reject ④ clarify ⑤ abandon
+Q3. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+The manager sent a follow-up email to ( ) the confusing points made in the previous announcement. ① clarify ② substitute ③ estimate ④ hide ⑤ restrict
+Q4. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+Despite facing numerous rejections and hardships, the young writer decided to ( ) in her efforts to publish her first novel. ① hesitate ② conform ③ persist ④ fluctuate ⑤ illustrate
+Q5. 빈칸에 들어갈 가장 알맞은 단어를 고르시오.
+The recent laboratory experiment was specifically designed to ( ) how the newly developed material reacts to extreme heat. ① conceal ② estimate ③ persist ④ demonstrate ⑤ decline
+
+--------------------------------------------------------------------------------
+
+✅ Part 2. 정답 및 상세 해설
+Q1. 정답: ④ illustrate
+뜻: 설명하다, 삽화(도해)를 넣다, 보여주다
+해석: 학생들이 복잡한 이론을 이해하는 것을 돕기 위해, 교수는 그 개념을 설명하기(보여주기) 위해 간단한 다이어그램(도표)을 사용했다.
+오답 노트: estimate(추정하다), ignore(무시하다), clarify(명확하게 하다), persist(고집하다)
+Q2. 정답: ② estimate
+뜻: 추정하다, 평가하다, 견적
+해석: 환경 전문가들은 새로운 친환경 정책이 향후 10년 동안 탄소 배출량을 20% 줄일 것이라고 추정한다.
+오답 노트: demonstrate(입증하다), reject(거절하다), clarify(명확하게 하다), abandon(버리다)
+Q3. 정답: ① clarify
+뜻: 명확하게 하다, 분명히 말하다
+해석: 매니저는 이전 공지사항에서 혼란을 주었던 점들을 명확하게 하기 위해 후속 이메일을 보냈다.
+오답 노트: substitute(대체하다), estimate(추정하다), hide(숨기다), restrict(제한하다)
+Q4. 정답: ③ persist
+뜻: 집요하게 계속하다, 고집하다, 지속되다
+해석: 수많은 거절과 어려움에 직면했음에도 불구하고, 그 젊은 작가는 그녀의 첫 소설을 출판하기 위한 노력을 계속하기로(고집하기로) 결심했다.
+꿀팁: persist in ~ing (~하는 것을 고집하다, 끝까지 계속하다) 형태로 아주 자주 쓰입니다!
+Q5. 정답: ④ demonstrate
+뜻: 입증하다, 시연하다, 보여주다
+해석: 최근의 실험실 실험은 새로 개발된 물질이 극도의 열에 어떻게 반응하는지를 입증하기(보여주기) 위해 특별히 고안되었다.
+오답 노트: conceal(숨기다), estimate(추정하다), persist(고집하다), decline(감소하다)
+
+--------------------------------------------------------------------------------
+
+💡 수 실장의 마무리 한마디: 어법 문제에서 동사 뒤의 형태(to-v vs -ing)를 묻는 문제가 나오면, 반드시 **'동사의 성질'**과 **'문맥상 과거/미래의 의미'**를 함께 고려하는 습관을 들이세요! 오늘 배운 5개의 필수 어휘도 여러분의 독해력을 한층 끌어올려 줄 핵심 무기입니다. 오늘 하루도 고생 많으셨습니다. 내일 또 알찬 퀴즈로 만나요! 화이팅! 💯
+keep_pin
+메모에 저장
+copy_all
+thumb_up
+thumb_down
+
+제공된 소스 'CSAT_Curriculum.md'를 바탕으로 'Point 07. 능동태와 수동태의 구별'에 대한 다음 두 문서를 마크다운 형식으로 생성해줘.
+
+
+
+
+
+'2026-02-28_수능 영어 어법 퀴즈: Point 07 수동태' (수능 실전형 5문항, 상세 해설 포함)
+
+
+'2026-02-28_수능 영어 어법 강의안: Point 07 수동태' (수능 대비 핵심 개념 정리)
+
+
+
+
+
+제목과 내용을 구분해서 명확하게 작성해줘.
+
+2026-02-28_수능 영어 어법 퀴즈: Point 07 수동태
+👋 안녕하세요, 수험생 여러분! 수능 영어 연구실 '수 실장'입니다.
+오늘 하루도 흔들림 없이 책상 앞을 지키고 있는 여러분의 끈기를 진심으로 응원합니다! 🔥 수능 어법에서 출제 빈도 1위를 다투는 가장 중요한 테마가 바로 '능동태와 수동태의 구별'입니다. 우리말의 해석에만 의존하다 보면 출제자의 매력적인 오답 함정에 빠지기 쉽습니다. 문장 구조와 '목적어의 유무'를 바탕으로 정확하게 판별하는 실전 감각을 오늘 퀴즈를 통해 완벽히 끌어올려 봅시다! 🚀
+
+--------------------------------------------------------------------------------
+
+Part 1. 실전 어법 5제 (Point 07. 능동태와 수동태의 구별)
+다음 문제들은 역대 수능 기출 지문에서 발췌 및 변형한 실전 문항입니다. 동사의 성질(자/타동사, 4/5형식)을 고려하여 괄호 안에서 어법상 올바른 표현을 고르시오.
+Q1. [3형식 동사의 태] (2023학년도 대수능 기출 응용)
+The existing world faced by the individual is in principle an infinite chaos of events and details before it [ organizes / is organized ] by a human mind.1
+Q2. [4형식 동사의 태] (2018학년도 대수능 기출 응용)
+Rather incredibly, one archaeologist employed by a treasure hunting firm said that as long as archaeologists [ gave / are given ] six months to study shipwrecked artifacts before they are sold, no historical knowledge is lost!2
+Q3. [5형식 동사의 태] (2020학년도 대수능 기출 응용)
+Invasions of natural communities by non-indigenous species are currently [ rating / rated ] as one of the most important global-scale environmental problems.3
+Q4. [자동사의 수동태 불가] (2022학년도 대수능 기출 응용)
+Each daughter cell is smaller than the mother cell, and except for unusual cases, each grows until it [ becomes / is become ] as large as the mother cell was.4
+Q5. [수식어구를 동반한 태 판별] (2019학년도 대수능 기출 응용)
+This inner weight is the quality which Egyptian art possesses to such a degree that everything in it seems to [ make / be made ] of primeval stone.5
+
+--------------------------------------------------------------------------------
+
+✅ 정답 및 상세 해설
+Q1. 정답: is organized
+[출제 포인트]: 3형식 타동사의 능동 vs 수동 (목적어 유무)
+[상세 해설]: organize(~을 조직하다, 체계화하다)는 목적어가 필요한 타동사입니다. 괄호 뒤를 보면 명사(목적어) 없이 by a human mind라는 전치사구만 존재합니다. 따라서 주어인 it(an infinite chaos)이 스스로 조직하는 것이 아니라 인간의 마음에 의해 '조직되는' 것이므로 수동태인 is organized가 정답입니다.
+Q2. 정답: are given
+[출제 포인트]: 4형식 동사(give)의 수동태
+[상세 해설]: give는 '~에게 ~을 주다'라는 4형식 수여동사입니다. 수동태가 되어도 뒤에 직접목적어(명사)가 남을 수 있습니다. 고고학자들이 6개월의 시간을 '주어지는(부여받는)' 수동의 의미이므로 are given이 정답입니다. 뒤에 명사(six months)가 있다고 해서 무조건 능동태(gave)를 고르면 안 되는 대표적인 함정 문제입니다.
+Q3. 정답: rated
+[출제 포인트]: 5형식 동사(rate)의 수동태
+[상세 해설]: rate A as B (A를 B로 평가하다) 구문에서 목적어 A가 주어 자리로 이동하여 수동태가 된 형태입니다. 외래종에 의한 침입(Invasions)이 가장 중요한 환경 문제 중 하나로 '평가되는' 것이므로 수동태인 rated가 정답입니다. 뒤에 as 전치사구가 남는 것을 확인하세요.
+Q4. 정답: becomes
+[출제 포인트]: 자동사의 수동태 불가
+[상세 해설]: become(~이 되다)은 목적어를 가지지 않는 대표적인 2형식 자동사입니다. 자동사는 목적어가 없으므로 애초에 수동태(be + p.p.)로 전환할 수 없습니다. 따라서 능동형인 becomes가 정답입니다. (주의해야 할 자동사: happen, occur, appear, disappear, consist of 등)
+Q5. 정답: be made
+[출제 포인트]: 3형식 타동사의 능동 vs 수동 (전치사구 걷어내기)
+[상세 해설]: make(~을 만들다)는 타동사입니다. 괄호 뒤에 목적어 역할을 하는 명사가 없고 전치사구(of primeval stone)만 이어지고 있습니다. 이집트 예술 안의 모든 것(everything)이 원시 시대의 돌로 '만들어진' 것처럼 보인다는 수동의 의미이므로 be made가 정답입니다.
+
+--------------------------------------------------------------------------------
+
+2026-02-28_수능 영어 어법 강의안: Point 07 수동태
+📚 수능 대비 핵심 개념 정리: 능동태와 수동태의 구별
+수능 어법에서 능동태와 수동태를 묻는 문제는 단순히 우리말 해석으로 접근하면 실패할 확률이 높습니다. 반드시 **동사의 형식(자/타동사 여부)**과 **뒤에 이어지는 문장 성분(목적어/보어 유무)**을 구조적으로 분석해야 합니다.
+1. 3형식 타동사의 능동태 vs 수동태 (가장 기본이자 핵심!)
+수능 어법의 절대 원칙: "타동사 뒤에 목적어(명사)가 있으면 능동태, 없으면 수동태이다."
+능동태 (V): 주어 + 타동사 + 명사(목적어 O)
+수동태 (be + p.p.): 주어 + 타동사의 p.p. + (명사 없음) + [전치사구/부사구 등 수식어구]
+주의: 수동태 뒤에 붙는 by~, in~, with~ 등의 전치사구나 부사는 문장 성분이 아닌 수식어구(거품)이므로 괄호로 묶어 지워버리면 목적어의 부재가 명확하게 보입니다.
+2. 4형식 / 5형식 동사의 수동태 (킬러 문항 주의!)
+수동태 뒤에는 명사가 오지 않는다는 기본 원칙의 예외입니다. 이 동사들은 수동태가 되어도 뒤에 명사나 형용사가 남을 수 있으므로 문맥과 구조를 함께 파악해야 합니다.
+4형식 동사 (수여동사): give, offer, send, ask, teach 등
+능동: 주어 + 동사 + 간접목적어(사람) + 직접목적어(사물)
+수동: 주어(사람) + be + p.p. + 명사(직접목적어 남음)
+예: I was given a book. (나는 책을 받았다.) -> 수동태 뒤에 명사(a book)가 남음!
+5형식 동사: call, name, consider, find, leave, keep 등
+능동: 주어 + 동사 + 목적어 + 목적격 보어(명사/형용사)
+수동: 주어(목적어) + be + p.p. + 명사/형용사 (목적격 보어 남음)
+예: The task was considered difficult. (그 임무는 어려운 것으로 여겨졌다.)
+3. 수동태로 절대 쓸 수 없는 자동사 (암기 필수!)
+목적어를 취하지 않는 1, 2형식 자동사는 애초에 수동태(be + p.p.) 모양 자체가 존재할 수 없습니다. 시험에 나오는 순간 능동태가 무조건 정답입니다.
+발생하다: happen, occur, take place, arise
+나타나다/사라지다: appear, disappear, vanish
+기타 빈출 자동사: consist of(~로 구성되다), remain(~상태로 남아있다), exist(존재하다), function(기능하다)
+4. 감정 유발 동사의 태 (사람 vs 사물)
+감정을 나타내는 동사(surprise, interest, disappoint, confuse 등)는 기본적으로 '~하게 만들다(유발하다)'라는 타동사입니다.
+주어가 감정을 느끼면 (사람 주어): 수동태/과거분사형 (be + p.p. / p.p.)
+예: Peter was disappointed. (피터는 실망했다.)6
+주어가 감정을 유발하면 (사물/상황 주어): 능동태/현재분사형 (V / v-ing)
+예: The result was disappointing. (그 결과는 실망스러웠다.)
+keep_pin
+메모에 저장
+copy_all
+thumb_up
+thumb_down
+오늘 • AM 9:59
+소스 28개
+arrow_forward
+스튜디오
+dock_to_left
+audio_magic_eraser
+AI 오디오 오버뷰
+edit
+tablet
+슬라이드 자료
+edit
+subscriptions
+동영상 개요
+flowchart
+마인드맵
+auto_tab_group
+보고서
+cards_star
+플래시카드
+edit
+quiz
+퀴즈
+edit
+stacked_bar_chart
+인포그래픽
+edit
+table_view
+데이터 표
+edit
+sticky_note_2
+수능 영어 기출 유형과 평가의 정석
+1일 전
+more_vert
+tablet
+Daily English Level Up 06
+소스 1개 · 2일 전
+more_vert
+tablet
+2026 CSAT English Master Plan
+소스 27개 · 2일 전
+more_vert
+tablet
+CSAT English DNA and Strategy
+소스 26개 · 4일 전
+more_vert
+table_view
+수능 영어 19번 심경 변화 및 추론 어휘 분류
+소스 22개 · 6일 전
+more_vert
+sticky_note_2
+수능 영어 정복: 도치 구문과 필수 어휘 트레이닝
+7일 전
+more_vert
+sticky_note_2
+메모 추가
+NotebookLM이 부정확한 정보를 표시할 수 있으므로 대답을 다시 한번 확인하세요.
