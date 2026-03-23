@@ -1,0 +1,14 @@
+.env
+.DS_Store
+automation/naver_profile/
+automation/google_profile/
+automation/*.png
+automation/*.webp
+automation/*.log
+automation/*.html
+automation/output/
+debug_*.png
+*.webp
+*.png
+node_modules/
+.vite/
